@@ -1,0 +1,22 @@
+{
+    "1": {
+      "title": "Front End Developer / w3schools.com",
+      "duration": "Jan 2015 -",
+      "text": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt",
+      "Ongoing": 1
+    },
+    "2": {
+        "title": "Web Developer / something.com",
+        "duration": "Mar 2012 - Dec 2014",
+        "text": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt",
+        "Ongoing": 0
+    },
+    "3": {
+        "title": "Graphic Designer / designsomething.com",
+        "duration": "Jun 2010 - Mar 2012",
+        "text": "Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt",
+        "Ongoing": 0
+    }
+  
+  }
+  
