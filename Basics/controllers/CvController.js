@@ -25,7 +25,7 @@ const getCV = (req, res) => {
   for (let key in experiences) {
     workexps.push(experiences[key]);
     }
-  res.render("cv", { name: "Talimul Bari", educations: edus , languages: language, skills: skill, workexps: workexps});
+  res.render("cv", { name: "Talimul Bari",Designation:"Designer",email:"hello@gmail.com",number:"1234565",address:"dhaka", educations: edus , languages: language, skills: skill, workexps: workexps});
 };
 
 module.exports = { getCV: getCV };

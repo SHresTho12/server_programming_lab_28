@@ -4,6 +4,7 @@ const port = 3000;
 const router = require("./router");
 const bodyParser = require('body-parser')
 app.use(express.static("public"));
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(router); 
 app.set("view engine", "ejs"); 
 
