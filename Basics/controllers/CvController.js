@@ -3,11 +3,11 @@ const fs = require("fs");
 const getCV = (req, res) => {
   educations = fs.readFileSync("data/education", { encoding: "utf-8" });
   educations = JSON.parse(String(educations));
-  languages = fs.readFileSync("data/language.json", { encoding: "utf-8"})
+  languages = fs.readFileSync("data/language", { encoding: "utf-8"})
   languages = JSON.parse(String(languages));
-  skills = fs.readFileSync("data/skill.json", { encoding: "utf-8"})
+  skills = fs.readFileSync("data/skill", { encoding: "utf-8"})
   skills = JSON.parse(String(skills));
-  experiences = fs.readFileSync("data/workexp.json", { encoding: "utf-8"})
+  experiences = fs.readFileSync("data/workexp", { encoding: "utf-8"})
   experiences = JSON.parse(String(experiences));
   edus = [];
   language = [];
