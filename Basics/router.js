@@ -11,5 +11,8 @@ router.get("/", (req, res) => {
   router.get("/about", (req, res) => {
     res.send("About Page");
   });
+  router.get("/cv", (req, res) => {
+    res.render("cv", { name: "Talimul Bari" });
+  });
   
   module.exports = router;
