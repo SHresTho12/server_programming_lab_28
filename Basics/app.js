@@ -1,14 +1,13 @@
-// Load HTTP module
-const http = require("http");
-
-const hostname = "127.0.0.1";
+const express = require("express"); 
+const app = express(); 
 const port = 3000;
 
 
-const server = http.createServer(function (req, res) {
- 
-  res.writeHead(200, { "Content-Type": "text/plain" });
-
-  res.end("Hello World\n");
+app.get("/", function (req, res) {
+  res.send("Hello World!");
 });
 
+app.listen(port, function () {
+  //starts up the server on a specified port ('3000')
+  console.log(`Example app listening on port ${port}!`);
+});
