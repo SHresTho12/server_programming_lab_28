@@ -39,7 +39,7 @@ router.get("/submit", book_submit.getForm);
     })
   });
 
-//   router.get("/booklist", booklist.getBookList);
+  router.get("/booklist", booklist.getBookList);
 //   app.get("/", async (req, res) => {
 //     const bookList = await BookList.find({}).sort("-date");
 //     res.render("index", { bookList });
