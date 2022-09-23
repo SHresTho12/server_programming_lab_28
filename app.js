@@ -19,6 +19,9 @@ mongoose.connect(db_url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 
+
+
+
 app.set('view engine', 'ejs');
 app.set("views", __dirname + "/views");
 var port = process.env.PORT || 3000;
