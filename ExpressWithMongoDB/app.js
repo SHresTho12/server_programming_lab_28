@@ -4,11 +4,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const router = require("./routes");
 
-
-const passport = require('passport');
-const session = require('express-session');
-const UserDetails = require('./models/userDetails');
-
+const passport = require("passport");
+const session = require("express-session");
+const UserDetails = require("./models/userDetails");
 
 const app = express();
 const port = 3000;
@@ -23,6 +21,8 @@ mongoose
   .catch(() => {
     console.log("Could not connect to database!");
   });
+
+app.use(express.static("public"));
 
 app.use(
   session({
